@@ -45,30 +45,21 @@ The Wigs project is a Django REST Framework application designed to manage infor
     # Install Docker Compose (follow the instructions for your OS)
     ```
 
-3. **Configure Environment Variables:**
 
-    Create a `.env` file in the project root and define the required environment variables:
-
-    ```env
-    # Example .env file
-    PORT=8000
-    DATABASE_URL=your_database_url
-    ```
-
-4. **Build and Run Docker Container:**
+3. **Build and Run Docker Container:**
 
     ```bash
     docker-compose up --build
     ```
 
-5. **Run Migrations:**
+4. **Run Migrations:**
 
     ```bash
     docker-compose exec web python manage.py makemigrations
     docker-compose exec web python manage.py migrate
     ```
 
-6. **Access the API:**
+5. **Access the API:**
 
     The API should be accessible at [http://localhost:8000/api/](http://localhost:8000/api/).
 
