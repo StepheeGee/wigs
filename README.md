@@ -34,7 +34,7 @@ The Wigs project is a Django REST Framework application designed to manage infor
 1. **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/your-username/wigs.git
+    git clone https://github.com/stephegee/wigs.git
     cd wigs
     ```
 
