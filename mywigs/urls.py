@@ -1,7 +1,11 @@
 # mywigs/urls.py
-from rest_framework.routers import DefaultRouter
-from .views import WigViewSet
 
-router = DefaultRouter()
-router.register(r'wigs', WigViewSet, basename='wig')
-urlpatterns = router.urls
+from django.urls import path, include
+from .views import HomeView
+from .api_urls import router
+
+urlpatterns = [
+    path('', HomeView.as_view(), name='home'),
+    path('api/', include(router.urls)),
+    path('api-auth/', include('rest_framework.urls')),
+]
